@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+  <style>
+
+   /* .grid{
+      display: grid;
+      //this property sets the first three items in grid  to have these fractions of width and the remaining items are styled implicitly
+
+      grid-template-rows: 1fr 2fr 3fr;
+      gap: 1rem;
+      //To style the remaining items in the grid that are implicit before use grid-auto-rows
+
+      grid-auto-rows: 4fr 1fr 2fr;
+
+    } */
+
+    /* As the grid is used for multi dimensional styling grid-template-columns can be used along with grid-template-columns for ex: */
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 2fr 3fr;
+      gap: 1rem;
+    }
+    .item{
+      padding: 3rem;
+      border: #ccc 1px solid;
+      border-radius: 1rem;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
