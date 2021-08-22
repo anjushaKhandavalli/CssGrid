@@ -1,0 +1,21 @@
+Grid layout system for CSS which is similar to Flex
+Difference between Flex and Grid is, Grid is capable fo two dimensional layouts
+CSS Grid is bit difficult to use than Flex but it is more powerful
+Can use "align-items", "justify-content" etc
+Partial support for IE11
+
+
+
+display: grid (Create a "grid")
+All direct child elements are "grid items"
+"grid-template-columns" defines width and number of cols
+FR unit(fraction)
+
+
+The biggest difference between Flex and Grid is that Grid is capable of two dimensional while FLex supports only for single dimension
+
+Grid vs Flex
+1.  It is Not one or the other
+2.  Use CSS Grid for outter elements and grid-like layouts
+3.  Use Flex for sumple alignment(Inner elements, menu items, etc)
+4.  Most of the stuff we have done so far, I would use flex
