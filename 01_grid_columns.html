@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+  <style>
+
+    .grid{
+      display: grid;
+      /* grid-template-columns will take the size of each column width for all the columns. */
+      grid-template-columns: 200px 200px 200px; /* this units can be px, % or any other units. But most common unit that is used is fr ie fraction like ex: gris-template-columns: 1fr 1fr 1fr*/
+      /* To set one column to occupy all the remaining space 
+      /* grid-template-columns: 200px auto 200px; */
+      /* To set all columns to occupy equal amount of space 
+      /* grid-template-columns: auto auto auto; 
+      /* grid-template-columns: auto auto auto; can also be written as grid-template-columns: repeat(3,auto) */
+
+      /* The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.This property is specified as a value for <'row-gap'> followed optionally by a value for <'column-gap'>. If <'column-gap'> is omitted, it's set to the same value as <'row-gap'>. <'row-gap'> and <'column-gap'> are each specified as a <length> or a <percentage> */
+      gap: 1rem;
+
+    }
+    .item{
+      padding: 3rem;
+      border: #ccc 1px solid;
+      border-radius: 1rem;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      /* margin: 1rem; */
+    }
+
+    main{
+      margin-top: 1rem;
+      padding: 2rem;
+      border-radius: 1rem;
+      background-color: antiquewhite;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+
+  <main>
+    <section>
+      <h1>Welcome to my website</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate molestias, quae porro laboriosam reprehenderit dolorum! Dicta eius fuga accusantium consectetur, totam autem nisi quia consequuntur voluptatem, itaque iste cupiditate consequatur dolores illum animi recusandae cum earum, at sapiente iure.</p>
+    </section>
+
+    <aside>
+      <h2>About me</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, repellat.</p>
+    </aside>
+  </main>
+</body>
+</html>
